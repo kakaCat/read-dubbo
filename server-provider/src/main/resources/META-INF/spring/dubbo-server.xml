@@ -11,6 +11,8 @@
 
     <dubbo:registry id="zk2" address="zookeeper://192.168.11.157:2181"/>
 
+    <dubbo:registry id = "test" address="multicast://localhost:29014" />
+
     <dubbo:protocol port="20880" name="dubbo"/>
 
     <dubbo:protocol port="8080" name="hessian"/>
