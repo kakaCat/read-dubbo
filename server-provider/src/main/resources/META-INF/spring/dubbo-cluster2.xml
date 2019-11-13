@@ -15,6 +15,6 @@
     <dubbo:service interface="read.dubbo.ITest"
                    ref="ITest" protocol="dubbo" registry="zk1"/>
 
-    <bean id="ITest" class="read.dubbo.impl.Test"/>
+    <bean id="ITest" class="Test"/>
 
 </beans>

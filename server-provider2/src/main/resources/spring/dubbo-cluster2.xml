@@ -7,14 +7,14 @@
     <dubbo:application name="dubbo-server" owner="mic"/>
 
     <!--注册中心-->
-    <dubbo:registry id="zk1" address="zookeeper://192.168.11.156:2181"/>
+    <dubbo:registry id="zk1" address="zookeeper://192.168.11.156:2181,192.168.11.157:2181"/>
 
-    <dubbo:protocol port="20880" name="dubbo"/>
+    <dubbo:protocol port="20881" name="dubbo"/>
 
 
     <dubbo:service interface="read.dubbo.ITest"
                    ref="ITest" protocol="dubbo" registry="zk1"/>
 
-    <bean id="ITest" class="Test"/>
+    <bean id="ITest" class="read.dubbo.impl.Test"/>
 
 </beans>

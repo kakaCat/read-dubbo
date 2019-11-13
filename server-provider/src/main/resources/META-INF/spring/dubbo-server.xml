@@ -22,7 +22,7 @@
 
 
 
-    <bean id="ITest" class="read.dubbo.impl.Test"/>
+    <bean id="ITest" class="Test"/>
 
 
 </beans>

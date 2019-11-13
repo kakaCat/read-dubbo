@@ -15,11 +15,16 @@ public class App {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext
                 (new String[] {"dubbo-client.xml"});
 
-        ITest test = (ITest)context.getBean("test"); // 获取远程服务代理
+        for(;;){
 
-        String msg = test.iTest("--");
+            ITest test = (ITest)context.getBean("test"); // 获取远程服务代理
 
-        System.out.println(msg);
+            String msg = test.iTest("--");
+            System.out.println(msg);
+        }
+
+
+
     }
 
 

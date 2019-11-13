@@ -12,6 +12,7 @@
         <module>server-api</module>
         <module>server-provider</module>
         <module>server-clicent</module>
+        <module>server-provider2</module>
     </modules>
 
     <build>
